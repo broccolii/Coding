@@ -1,0 +1,1 @@
+http://hukai.me/android-training-course-in-chinese/basics/index.html
