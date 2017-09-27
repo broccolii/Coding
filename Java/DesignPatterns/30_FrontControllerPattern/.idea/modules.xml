@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/28_CompositeEntityPattern.iml" filepath="$PROJECT_DIR$/28_CompositeEntityPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/30_FrontControllerPattern.iml" filepath="$PROJECT_DIR$/30_FrontControllerPattern.iml" />
     </modules>
   </component>
 </project>
