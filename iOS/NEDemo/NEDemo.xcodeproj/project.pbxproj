@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4C4BC3F207BBFAF00459960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4BC3E207BBFAF00459960 /* AppDelegate.swift */; };
+		A4C4BC41207BBFAF00459960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4BC40207BBFAF00459960 /* ViewController.swift */; };
+		A4C4BC44207BBFAF00459960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C4BC42207BBFAF00459960 /* Main.storyboard */; };
+		A4C4BC46207BBFAF00459960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C4BC45207BBFAF00459960 /* Assets.xcassets */; };
+		A4C4BC49207BBFAF00459960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C4BC47207BBFAF00459960 /* LaunchScreen.storyboard */; };
+		A4C4BC54207BBFAF00459960 /* NEDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4BC53207BBFAF00459960 /* NEDemoTests.swift */; };
+		A4C4BC5F207BBFAF00459960 /* NEDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4BC5E207BBFAF00459960 /* NEDemoUITests.swift */; };
+		A4C4BC73207BC0BA00459960 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4BC72207BC0BA00459960 /* PacketTunnelProvider.swift */; };
+		A4C4BC78207BC0BA00459960 /* NEDemoTarget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4C4BC70207BC0BA00459960 /* NEDemoTarget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4C4BC84207BC3A700459960 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C4BC83207BC3A700459960 /* NetworkExtension.framework */; };
+		A4C4BC86207BC76E00459960 /* VpnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C4BC85207BC76E00459960 /* VpnManager.swift */; };
+		A4C4BC88207BC89C00459960 /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = A4C4BC87207BC89B00459960 /* NEKitRule.conf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4C4BC50207BBFAF00459960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C4BC33207BBFAF00459960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C4BC3A207BBFAF00459960;
+			remoteInfo = NEDemo;
+		};
+		A4C4BC5B207BBFAF00459960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C4BC33207BBFAF00459960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C4BC3A207BBFAF00459960;
+			remoteInfo = NEDemo;
+		};
+		A4C4BC76207BC0BA00459960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C4BC33207BBFAF00459960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C4BC6F207BC0BA00459960;
+			remoteInfo = NEDemoTarget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4C4BC7C207BC0BA00459960 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4C4BC78207BC0BA00459960 /* NEDemoTarget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A4C4BC3B207BBFAF00459960 /* NEDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C4BC3E207BBFAF00459960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4C4BC40207BBFAF00459960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4C4BC43207BBFAF00459960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4C4BC45207BBFAF00459960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4C4BC48207BBFAF00459960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4C4BC4A207BBFAF00459960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C4BC4F207BBFAF00459960 /* NEDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C4BC53207BBFAF00459960 /* NEDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEDemoTests.swift; sourceTree = "<group>"; };
+		A4C4BC55207BBFAF00459960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C4BC5A207BBFAF00459960 /* NEDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C4BC5E207BBFAF00459960 /* NEDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEDemoUITests.swift; sourceTree = "<group>"; };
+		A4C4BC60207BBFAF00459960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C4BC70207BC0BA00459960 /* NEDemoTarget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NEDemoTarget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C4BC72207BC0BA00459960 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		A4C4BC74207BC0BA00459960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C4BC75207BC0BA00459960 /* NEDemoTarget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEDemoTarget.entitlements; sourceTree = "<group>"; };
+		A4C4BC80207BC1DB00459960 /* NEDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEDemo.entitlements; sourceTree = "<group>"; };
+		A4C4BC83207BC3A700459960 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		A4C4BC85207BC76E00459960 /* VpnManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VpnManager.swift; sourceTree = "<group>"; };
+		A4C4BC87207BC89B00459960 /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEKitRule.conf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4C4BC38207BBFAF00459960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C4BC84207BC3A700459960 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC4C207BBFAF00459960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC57207BBFAF00459960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC6D207BC0BA00459960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4C4BC32207BBFAF00459960 = {
+			isa = PBXGroup;
+			children = (
+				A4C4BC3D207BBFAF00459960 /* NEDemo */,
+				A4C4BC52207BBFAF00459960 /* NEDemoTests */,
+				A4C4BC5D207BBFAF00459960 /* NEDemoUITests */,
+				A4C4BC71207BC0BA00459960 /* NEDemoTarget */,
+				A4C4BC3C207BBFAF00459960 /* Products */,
+				A4C4BC7D207BC1DB00459960 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4C4BC3C207BBFAF00459960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4C4BC3B207BBFAF00459960 /* NEDemo.app */,
+				A4C4BC4F207BBFAF00459960 /* NEDemoTests.xctest */,
+				A4C4BC5A207BBFAF00459960 /* NEDemoUITests.xctest */,
+				A4C4BC70207BC0BA00459960 /* NEDemoTarget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4C4BC3D207BBFAF00459960 /* NEDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A4C4BC80207BC1DB00459960 /* NEDemo.entitlements */,
+				A4C4BC3E207BBFAF00459960 /* AppDelegate.swift */,
+				A4C4BC40207BBFAF00459960 /* ViewController.swift */,
+				A4C4BC85207BC76E00459960 /* VpnManager.swift */,
+				A4C4BC87207BC89B00459960 /* NEKitRule.conf */,
+				A4C4BC42207BBFAF00459960 /* Main.storyboard */,
+				A4C4BC45207BBFAF00459960 /* Assets.xcassets */,
+				A4C4BC47207BBFAF00459960 /* LaunchScreen.storyboard */,
+				A4C4BC4A207BBFAF00459960 /* Info.plist */,
+			);
+			path = NEDemo;
+			sourceTree = "<group>";
+		};
+		A4C4BC52207BBFAF00459960 /* NEDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4C4BC53207BBFAF00459960 /* NEDemoTests.swift */,
+				A4C4BC55207BBFAF00459960 /* Info.plist */,
+			);
+			path = NEDemoTests;
+			sourceTree = "<group>";
+		};
+		A4C4BC5D207BBFAF00459960 /* NEDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4C4BC5E207BBFAF00459960 /* NEDemoUITests.swift */,
+				A4C4BC60207BBFAF00459960 /* Info.plist */,
+			);
+			path = NEDemoUITests;
+			sourceTree = "<group>";
+		};
+		A4C4BC71207BC0BA00459960 /* NEDemoTarget */ = {
+			isa = PBXGroup;
+			children = (
+				A4C4BC72207BC0BA00459960 /* PacketTunnelProvider.swift */,
+				A4C4BC74207BC0BA00459960 /* Info.plist */,
+				A4C4BC75207BC0BA00459960 /* NEDemoTarget.entitlements */,
+			);
+			path = NEDemoTarget;
+			sourceTree = "<group>";
+		};
+		A4C4BC7D207BC1DB00459960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C4BC83207BC3A700459960 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4C4BC3A207BBFAF00459960 /* NEDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C4BC63207BBFAF00459960 /* Build configuration list for PBXNativeTarget "NEDemo" */;
+			buildPhases = (
+				A4C4BC37207BBFAF00459960 /* Sources */,
+				A4C4BC38207BBFAF00459960 /* Frameworks */,
+				A4C4BC39207BBFAF00459960 /* Resources */,
+				A4C4BC7C207BC0BA00459960 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4C4BC77207BC0BA00459960 /* PBXTargetDependency */,
+			);
+			name = NEDemo;
+			productName = NEDemo;
+			productReference = A4C4BC3B207BBFAF00459960 /* NEDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4C4BC4E207BBFAF00459960 /* NEDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C4BC66207BBFAF00459960 /* Build configuration list for PBXNativeTarget "NEDemoTests" */;
+			buildPhases = (
+				A4C4BC4B207BBFAF00459960 /* Sources */,
+				A4C4BC4C207BBFAF00459960 /* Frameworks */,
+				A4C4BC4D207BBFAF00459960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4C4BC51207BBFAF00459960 /* PBXTargetDependency */,
+			);
+			name = NEDemoTests;
+			productName = NEDemoTests;
+			productReference = A4C4BC4F207BBFAF00459960 /* NEDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4C4BC59207BBFAF00459960 /* NEDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C4BC69207BBFAF00459960 /* Build configuration list for PBXNativeTarget "NEDemoUITests" */;
+			buildPhases = (
+				A4C4BC56207BBFAF00459960 /* Sources */,
+				A4C4BC57207BBFAF00459960 /* Frameworks */,
+				A4C4BC58207BBFAF00459960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4C4BC5C207BBFAF00459960 /* PBXTargetDependency */,
+			);
+			name = NEDemoUITests;
+			productName = NEDemoUITests;
+			productReference = A4C4BC5A207BBFAF00459960 /* NEDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A4C4BC6F207BC0BA00459960 /* NEDemoTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C4BC79207BC0BA00459960 /* Build configuration list for PBXNativeTarget "NEDemoTarget" */;
+			buildPhases = (
+				A4C4BC6C207BC0BA00459960 /* Sources */,
+				A4C4BC6D207BC0BA00459960 /* Frameworks */,
+				A4C4BC6E207BC0BA00459960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NEDemoTarget;
+			productName = NEDemoTarget;
+			productReference = A4C4BC70207BC0BA00459960 /* NEDemoTarget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4C4BC33207BBFAF00459960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Broccoli;
+				TargetAttributes = {
+					A4C4BC3A207BBFAF00459960 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					A4C4BC4E207BBFAF00459960 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4C4BC3A207BBFAF00459960;
+					};
+					A4C4BC59207BBFAF00459960 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4C4BC3A207BBFAF00459960;
+					};
+					A4C4BC6F207BC0BA00459960 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A4C4BC36207BBFAF00459960 /* Build configuration list for PBXProject "NEDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4C4BC32207BBFAF00459960;
+			productRefGroup = A4C4BC3C207BBFAF00459960 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4C4BC3A207BBFAF00459960 /* NEDemo */,
+				A4C4BC4E207BBFAF00459960 /* NEDemoTests */,
+				A4C4BC59207BBFAF00459960 /* NEDemoUITests */,
+				A4C4BC6F207BC0BA00459960 /* NEDemoTarget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4C4BC39207BBFAF00459960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C4BC49207BBFAF00459960 /* LaunchScreen.storyboard in Resources */,
+				A4C4BC88207BC89C00459960 /* NEKitRule.conf in Resources */,
+				A4C4BC46207BBFAF00459960 /* Assets.xcassets in Resources */,
+				A4C4BC44207BBFAF00459960 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC4D207BBFAF00459960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC58207BBFAF00459960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC6E207BC0BA00459960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4C4BC37207BBFAF00459960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C4BC41207BBFAF00459960 /* ViewController.swift in Sources */,
+				A4C4BC3F207BBFAF00459960 /* AppDelegate.swift in Sources */,
+				A4C4BC86207BC76E00459960 /* VpnManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC4B207BBFAF00459960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C4BC54207BBFAF00459960 /* NEDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC56207BBFAF00459960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C4BC5F207BBFAF00459960 /* NEDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C4BC6C207BC0BA00459960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C4BC73207BC0BA00459960 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4C4BC51207BBFAF00459960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C4BC3A207BBFAF00459960 /* NEDemo */;
+			targetProxy = A4C4BC50207BBFAF00459960 /* PBXContainerItemProxy */;
+		};
+		A4C4BC5C207BBFAF00459960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C4BC3A207BBFAF00459960 /* NEDemo */;
+			targetProxy = A4C4BC5B207BBFAF00459960 /* PBXContainerItemProxy */;
+		};
+		A4C4BC77207BC0BA00459960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C4BC6F207BC0BA00459960 /* NEDemoTarget */;
+			targetProxy = A4C4BC76207BC0BA00459960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4C4BC42207BBFAF00459960 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C4BC43207BBFAF00459960 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4C4BC47207BBFAF00459960 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C4BC48207BBFAF00459960 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4C4BC61207BBFAF00459960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4C4BC62207BBFAF00459960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4C4BC64207BBFAF00459960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NEDemo/NEDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5K6V22573;
+				INFOPLIST_FILE = NEDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.broccoliii.NEDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4C4BC65207BBFAF00459960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NEDemo/NEDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5K6V22573;
+				INFOPLIST_FILE = NEDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.broccoliii.NEDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4C4BC67207BBFAF00459960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNG6JK98J6;
+				INFOPLIST_FILE = NEDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.broccoliii.NEDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEDemo.app/NEDemo";
+			};
+			name = Debug;
+		};
+		A4C4BC68207BBFAF00459960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNG6JK98J6;
+				INFOPLIST_FILE = NEDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.broccoliii.NEDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEDemo.app/NEDemo";
+			};
+			name = Release;
+		};
+		A4C4BC6A207BBFAF00459960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNG6JK98J6;
+				INFOPLIST_FILE = NEDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.broccoliii.NEDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NEDemo;
+			};
+			name = Debug;
+		};
+		A4C4BC6B207BBFAF00459960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RNG6JK98J6;
+				INFOPLIST_FILE = NEDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.broccoliii.NEDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NEDemo;
+			};
+			name = Release;
+		};
+		A4C4BC7A207BC0BA00459960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NEDemoTarget/NEDemoTarget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5K6V22573;
+				INFOPLIST_FILE = NEDemoTarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.broccoliii.NEDemo.NEDemoTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4C4BC7B207BC0BA00459960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NEDemoTarget/NEDemoTarget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B5K6V22573;
+				INFOPLIST_FILE = NEDemoTarget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.broccoliii.NEDemo.NEDemoTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4C4BC36207BBFAF00459960 /* Build configuration list for PBXProject "NEDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C4BC61207BBFAF00459960 /* Debug */,
+				A4C4BC62207BBFAF00459960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C4BC63207BBFAF00459960 /* Build configuration list for PBXNativeTarget "NEDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C4BC64207BBFAF00459960 /* Debug */,
+				A4C4BC65207BBFAF00459960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C4BC66207BBFAF00459960 /* Build configuration list for PBXNativeTarget "NEDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C4BC67207BBFAF00459960 /* Debug */,
+				A4C4BC68207BBFAF00459960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C4BC69207BBFAF00459960 /* Build configuration list for PBXNativeTarget "NEDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C4BC6A207BBFAF00459960 /* Debug */,
+				A4C4BC6B207BBFAF00459960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C4BC79207BC0BA00459960 /* Build configuration list for PBXNativeTarget "NEDemoTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C4BC7A207BC0BA00459960 /* Debug */,
+				A4C4BC7B207BC0BA00459960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4C4BC33207BBFAF00459960 /* Project object */;
+}
